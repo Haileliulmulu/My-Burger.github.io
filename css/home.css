@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        } 
+     
+body{
+	background-image: url(b2.jpeg);
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;  
+}      
+.container {
+ 
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  padding: 22px 50px;
+}
+.container .custom-card {
+  margin-top :5rem;
+  display: flex;
+  width: 100%; /* Adjust the width to occupy the full width of the container */
+  max-width: 360px; /* Set a maximum width for the card */
+  overflow: hidden;
+  height: 360px;
+  background-color: #333;
+  backdrop-filter: blur(2000px);
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px goldenrod;
+}
+.container .custom-card:hover {
+  height: 550px;
+}
+.container .custom-card .img-box {
+  position: absolute;
+  top: 0px;
+  width: 100%; /* Adjust the width to occupy the full width of the card */
+  height: 300px;
+  background: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.container .custom-card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(2);
+}
+.container .custom-card .custom-content {
+  position: absolute;
+  top: 320px;
+  width: 100%; /* Adjust the width to occupy the full width of the card */
+  height: 31px;
+  padding: 0 0px;
+  text-align: center;
+  background-color: #333;
+  transition: 0.5s;
+}
+.container .custom-card:hover .custom-content {
+  height: 330px;
+}
+.container .custom-card .custom-content h2 {
+  font-size: 1.4rem;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  color: rgb(4, 255, 4);
+}
+.container .custom-card .custom-content p {
+  margin-top: 10px;
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 1rem;
+}
+.container .custom-card .custom-content button {
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid rgb(195, 250, 195);
+  color: rgb(4, 255, 4);
+  font-weight: bold;
+  margin-left: 1rem;
+  box-shadow: 0 3px 8px goldenrod;
+}
+.container .custom-card .custom-content button:hover {
+  opacity: 0.8;
+  background-color: white;
+  border: 3px solid crimson;
+}
+
+@media screen and (width <= 500px) {
+  .container {
+    padding: 1px; 
+  }
+}
+        /* nav*/
+ button {
+   
+    border: 0;
+    padding: 0;
+    background:transparent;
+    cursor: pointer;
+    line-height: 1;
+    color: rgb(5, 253, 5);
+    font-family: "Euclid Circular A";
+    font-size: 20px;
+  } .dropdown-menu > button:hover {
+    opacity: 1;
+  }
+  .button img{
+      border-radius: 50%;
+      filter: saturate(5);
+
+  }
+  .button a{
+      color: rgb(5, 253, 5);
+      font-size: 15px;
+  }
+  .dropdown-content a{
+    padding: 0.3rem 0.3rem;   
+}
+.dropdown-content{
+    box-shadow: 4px 4px 4px 4px transparent;
+}
+.dropdown img{
+    width:22px;
+    height: 22px;
+    border-radius: 60px;
+    background-color: transparent;
+    filter: saturate(3);
+
+}
+#cc{
+    margin-left: 1rem;
+    width:3rem;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.dropbtn{
+color:#333;
+padding:1rem;
+border:none;
+background-color:transparent;
+}
+.dropdown{
+display: inline-block;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background:transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background:rgb(5, 253, 5);
+  border-radius: 5rem;
+}
+.dropdown-content{
+position: absolute;
+background-color: transparent;
+min-width: 10rem;
+box-shadow: 8px 8px 8px 8px transparent;
+z-index: 1;
+display: none;
+}
+.dropdown-content a{
+color:white;
+padding: 1rem;
+text-decoration: none;
+display: block;
+font-size:15px;
+border-radius: 90%;
+}
+.dropdown-content a:hover {
+background-color: transparent;
+}
+.dropdown:hover .dropdown-content{
+display:inline-flex;
+top:5px;
+flex-wrap: wrap;
+}
+.dropdown img{
+width:45px;
+height: 45px;
+border-radius: 60px;
+background-color: transparent;
+}
+table {
+    margin-top:40px;
+  width: 100%;
+  border-collapse: collapse; 
+  }
+  h1{
+  color:rgb(5, 255, 5);
+  }
+  th, td {
+  border: 1px solid transparent;
+  padding: 3px;
+  text-align: right;
+  
+  font-size: 2rem;
+  color: rgb(4, 255, 4);
+  text-align: center; 
+  } 
+  th {
+  background-color: transparent;
+  color:rgb(4, 255, 4);
+  } 
+  td input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  background: #333;
+  backdrop-filter: blur(60px);
+  font-size: 1.5rem;
+  color:rgb(0, 252, 0);
+  font-weight:700;
+  border: 1px solid goldenrod;
+  }
+
+  @media (width <= 500px) {
+    td input[type="text"] {
+ 
+      font-size: 1rem;
+      color:rgb(0, 252, 0);
+      font-weight:lighter;
+     
+    }
+  }
+
+  button {
+    margin-left: 2rem;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    line-height: 1;
+    color: inherit;
+    font-family: "Euclid Circular A";
+    font-size: 1.2rem;
+  }
+  .button2{
+    color:rgb(0, 252, 0);
+  }
+    @media (width >= 500px) {
+      button {
+        font-size: 16px;
+      }
+    }
+    :is(.navbar, .burger, .dropdowns) {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+  
+    }  
+    .navbar {
+      z-index: 1;
+      display: flex;
+      align-items: stretch;
+      height: 72px;
+      background: rgba(163, 129, 129, 0.2);
+  backdrop-filter: blur(205px);
+      color: rgb(5, 253, 5);
+      border-bottom: 2px solid white;
+    }
+    .burger {
+      z-index: 3;
+      right: 0;
+      display: grid;
+      place-items: center;
+      width: 72px;
+      height: 72px;
+      background-image: url("menu.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    body.open .burger {
+      background-image: url("close.svg");
+    } 
+    @media (width >= 720px) {
+      .burger {
+        display: none;
+      }
+    }
+    .button {
+    
+      display: flex;
+      align-items: center;
+      gap: 1px;
+      padding: 0 24px;
+      height: 100%;
+      opacity: 0.6;
+    }
+    .button > img {
+      display: none;
+      filter: saturate(1);
+
+    }
+    @media (width >= 720px) {
+      .button {
+        padding: 0 10px 0 24px;
+      }
+      .button > img {
+        display: block;  
+      }
+    } 
+    @media (width >= 720px) {
+      .dropdown:hover .button {
+        opacity: 1;
+      }
+    }
+    .dropdowns {
+      left: -9999px;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+  backdrop-filter: blur(40px);
+      opacity: 0;
+      visibility: hidden;
+      transition-property: opacity, visibility;
+      transition-duration: 0.3s;
+    }
+    @media (width < 720px) {
+    body.open .dropdowns {
+          opacity: 1;
+          visibility: visible;
+          left: 0;
+          height: 20rem;
+          border-radius: 5%;
+          background-color:#333;
+          backdrop-filter: blur(100px);
+      }
+      .dropdown-menu:active{
+        pointer-events: none;
+  
+      }
+    }  
+    @media (width >= 720px) {
+      .dropdowns {
+        margin-left:3rem;
+        position: static;
+      gap: 20px;
+        flex-direction: row;
+        justify-content: flex-start;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    } 
+    .dropdown-menu {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 28px;
+      background-color: transparent;
+    }
+    .dropdown-menu:active{
+      pointer-events: none;
+
+    }
+    @media (width >= 720px) {
+      .dropdown {
+        height: 100%;
+        flex-direction: row;
+      }
+      .dropdown-menu {
+        position: absolute;
+        top: 52px;
+        left: 0;
+        width: 25rem;
+        padding: 6px 24px 10px;
+        margin-bottom: 0;
+        place-items: start;
+        background: transparent;
+        opacity: 0;
+        visibility: hidden;
+        translate: 0 24px;
+        transition: 0.3s;  
+      } 
+      .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        translate: 0 0;
+      }
+    }  
+    .dropdown-menu > button {
+      color: #f9f9f9;
+      opacity: 1;
+      height: 40px;
+    }
+    @media (width >= 500px) {
+      .dropdown-menu > button {
+        opacity: 0.6;
+      }
+      .dropdown:hover .button {
+        opacity: 1;
+      }
+    }  
+    .dropdown-menu > button:hover {
+      opacity: 1;
+    }
+    .button a{
+        color: rgb(5, 253, 5);
+        font-size: 15px;
+    }
+  @media screen and (width <= 500px) {
+
+    table td:nth-child(3){
+      display: block;
+        width: 100%; 
+      }
+      th, td {
+        font-size: 0.8rem;
+      }  
+      .containe h1{
+     font-size: 50%;
+    }
+  }
+  .save-btn {
+  margin-top: 10px;
+  }
+  form {
+  width: 500px;
+  border: 2px solid goldenrod;
+  padding: 30px;
+  background: transparent;
+  border-radius: 15px;
+  }
+  #more{
+    display:none;   
+}
+#mybtn{
+  display: flex;
+  flex-wrap: wrap;
+  flex:1 0 4rem;
+  justify-content: center;
+  margin: 10px auto;
+    background: rgb(68, 65, 65);
+    border: 1px solid white; 
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    margin-top: 30px;
+   font-size: 1.2rem;
+   color:rgb(5, 253, 5);
+   font-weight: bold;
+  }
+  input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    }
+    #password{
+    display: block;
+    background:rgb(80, 76, 76) ;
+    border: 1px solid goldenrod;
+    width: 60%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size:1rem;
+    color:rgb(5, 253, 5);
+    }
+    label {
+    color: rgb(5, 253, 5);
+    font-size: 18px;
+    padding: 10px;
+    }
+    .containers {
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      color: white;
+      backdrop-filter: blur(200px);
+      padding: 10px;
+      margin: 10px auto;
+      background: #333;
+      width: 100%;
+    }
+    .containers:hover{
+      color:goldenrod;
+    }
+    /* Darker chat container */
+    .darker {
+      background: #333;
+    }
+    /* Clear floats */
+    .containers::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .containers h1 {
+      font-family: 'raleway';
+      text-align: center;
+      text-transform: capitalize;
+      color:#ffff;
+      font-size: 2.2rem;
+    }
+    /* Style images */
+    .containers img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    /* Style the right image */
+    .containers img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+    }
+    /* Style time text */
+    .time-right {
+      float: right'10px';
+      color: rgb(5, 253, 5);
+    }
+    /* Style time text */
+    .time-left {
+      float: left;
+      color:rgb(5, 253, 5);
+    }
+    /* otp */
+    .containe {
+      text-align: center; 
+    }
+    .containe h1{
+      color:white;
+    }
+    input[type="text"] {
+      justify-content: left;
+      width: 190px;
+      color:rgb(5, 253, 5);
+      height: 30px; 
+      font-size: 16px;
+      border: 1px solid goldenrod;
+      border-radius: 5px;
+    }
+    .button2 {
+      border-radius: 10%;
+      border: solid 1px white;
+      background:rgb(80, 76, 76) ;
+      font-size: 18px;
+      padding: 8px 15px;
+      border-radius: 5px;
+      margin: 10px auto;
+    }
+    #editButton {
+      display: none;
+      /* hide the Edit button by default */
+    }
+    #message {
+      margin-top: 20px;
+      font-weight: bold;
+      color:goldenrod;
+    }
+    #otpInput{
+      color:rgb(5, 253, 5);
+      background:rgb(80, 76, 76) ;
+    }
+    @media screen and (width <= 500px) { 
+      .containe h1{
+     font-size: 1.2rem;
+    }
+  }
+ 
+  
